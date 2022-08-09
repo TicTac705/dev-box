@@ -21,4 +21,4 @@ sudo ln -sf /etc/php/7.4/mods-available/mongodb.ini /etc/php/7.4/cli/conf.d/30-m
 
 sudo systemctl restart php7.4-fpm.service
 
-touch /home/vagrant/.migrations/05-mongo
+touch /home/vagrant/.migrations/07-mongo

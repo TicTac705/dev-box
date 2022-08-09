@@ -1,6 +1,6 @@
 ip: "192.168.55.38"
-memory: 2048
-cpus: 2
+memory: 4096
+cpus: 3
 provider: virtualbox
 
 name: shop.local
@@ -33,6 +33,7 @@ features:
     - postgresql: false
     - ohmyzsh: false
     - webdriver: false
+    - mongodb: true
 
 services:
     - enabled:

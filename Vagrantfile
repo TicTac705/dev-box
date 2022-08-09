@@ -58,5 +58,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         config.notify_forwarder.enable = true
     end
 
+    # config.vm.provider :virtualbox do |vb|
+    #     vb.gui = true
+    # end
+
+    config.vm.boot_timeout = 600
+
     config.vm.network "forwarded_port", guest: 27017, host: 27017
 end
